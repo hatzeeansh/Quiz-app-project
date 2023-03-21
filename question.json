@@ -1,0 +1,26 @@
+[
+    {
+    "question":"What's my name?",
+    "choice1":"Anshu",
+    "choice2":"Anshul the Great",
+    "choice3":"Nikki",
+    "choice4":"Ansh",
+    "answer":2
+},
+{
+    "question":"What's my Role?",
+    "choice1":"Frontend",
+    "choice2":"Backend",
+    "choice3":"FullStack",
+    "choice4":"Devops",
+    "answer":1
+},
+{
+    "question":"What's my fav food?",
+    "choice1":"Aloo Parantha",
+    "choice2":"Pav Bhaji",
+    "choice3":"Pani puri",
+    "choice4":"Crispy Corn",
+    "answer":4
+}
+]

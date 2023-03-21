@@ -1,0 +1,119 @@
+:root{
+    font-size: 62.5%;
+    /* we made it 62.5 because most browser has root font size as 16 so 62.5% of 16 is approx 10 */
+    background-color: #ecf5ff;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color:#333
+}
+
+h1{
+    margin-bottom: 5rem;
+    font-size: 5.4rem;
+    color:#56a5eb
+}
+
+/* Utilities (utility classes) */
+/* read about utility classes + max-width thing */
+.container{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.container >*{
+width: 100%;
+}
+
+.flex-c{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    margin-bottom: 4rem;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+/* Button */
+
+.Btn{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid #56a5eb ;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    background-color: white;
+}
+
+.Btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86,185,235,0.5);
+    transform: translateY(-0.1rem);
+    transition: tranform 150ms;
+}
+
+.Btn[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+input{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border:none;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86,185,235,0.5);
+}
+
+input::placeholder{
+    color:#aaa;
+}
+
+.hidden{
+    display: none;
+}
+/* loader */
+#loader{
+    border: 1.6rem solid white;
+    border-radius: 50%;
+    border-top: 1.6rem solid #56a5eb;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
